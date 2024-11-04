@@ -1,11 +1,3 @@
-/**
-* Template Name: MyResume
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Updated: Jun 29 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
@@ -480,8 +472,8 @@ section,
   width: min-content;
   white-space: nowrap;
 }
+
 .skillGroupTitle::after {
-  
   content: '';
   position: absolute;
   bottom: -5px;
@@ -492,12 +484,12 @@ section,
 
 .skillGroup {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(80px, auto)); /* Changed to auto */
   grid-gap: 8px;
   margin: 0 auto;
-  width: 100%;
   justify-content: center;
 }
+
 .skillGroup:not(:last-child) {
   margin-bottom: 40px;
 }
@@ -521,16 +513,19 @@ section,
 
 .skillBox {
   padding: 5px;
-  width: 100%;
+  width: auto; /* Changed to auto to take only needed width */
+  min-width: 80px; /* Ensures there's a minimum width */
 }
 
 .skillBox img {
   width: 65%;
   height: auto;
 }
+
 .skillBox p {
   font-size: 1rem;
 }
+
 
 
 /*--------------------------------------------------------------
